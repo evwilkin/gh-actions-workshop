@@ -1,0 +1,17 @@
+name: release
+on:
+ push:
+   branches:
+     - main
+jobs:
+ build-deploy:
+   runs-on: ubuntu-latest
+   env:
+     GH_TOKEN: ${{ GH_ACTIONS_WORKSHOP }}
+     NPM_TOKEN: ${{ NPM_GH_ACTIONS_WORKSHOP }}
+   steps:
+     - uses: actions/checkout@v2
+     - name: Build my exercise
+       run: yarn build
+     - name: Release to NPM
+       run: npx semantic-release@19.0.5

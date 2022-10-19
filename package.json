@@ -1,0 +1,23 @@
+{
+  "name": "gh-actions-workshop",
+  "version": "1.0.0",
+  "description": "PF 2022 F2F Github actions training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && cp index.js dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evwilkin/gh-actions-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evwilkin/gh-actions-workshop/issues"
+  },
+  "homepage": "https://github.com/evwilkin/gh-actions-workshop#readme",
+  "release": {
+    "branches": "main"
+  }
+}
